@@ -32,8 +32,7 @@ public class AdicionaClienteServlet extends HttpServlet {
 		String sexo = request.getParameter("sexo");
 		String dataEmTexto = request.getParameter("dataNascimento");
 		Calendar dataNascimento = null;
-		String usuario = request.getParameter("usuario");
-		String senha = request.getParameter("senha");
+		String d_e_l_e_t_e = request.getParameter("d_e_l_e_t_e");
 		
 
 		// fazendo a conversão da data
@@ -54,12 +53,8 @@ public class AdicionaClienteServlet extends HttpServlet {
 		cliente.setSexo(sexo);
 		cliente.setDataNascimento(dataNascimento);
 		cliente.setD_e_l_e_t_e("0");
+
 		
-		
-		Login login = new Login();
-		login.setUsuario(usuario);
-		login.setSenha(senha);
-		login.setD_e_l_e_t_e("0");
 
 		// salva o contato
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("muambyte");
@@ -67,11 +62,9 @@ public class AdicionaClienteServlet extends HttpServlet {
 
 		manager.getTransaction().begin();
 		manager.persist(cliente);
-		manager.persist(login);
 		manager.getTransaction().commit();
 
 		System.out.println("Gravado!");
-				
 
 		manager.close();
 

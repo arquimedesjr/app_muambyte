@@ -23,9 +23,9 @@ body {font-family: "Roboto", sans-serif}
   <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
   <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Fechar <i class="fa fa-remove"></i></a>
   <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/adiciona-Cliente.jsp">Cadastra Cliente</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/login.jsp">Acessar</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/adiciona-Produto.jsp">Cadatro Produto</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/adiciona-Cliente.jsp">Cadastra Cliente</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/login.jsp">Acessar</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/adiciona-Produto.jsp">Cadatro Produto</a>
   <!-- <a class="w3-bar-item w3-button" href="#"></a>
   <!-- <a class="w3-bar-item w3-button" href="#"></a> -->
   <div>
@@ -50,26 +50,68 @@ body {font-family: "Roboto", sans-serif}
 <header class="w3-container w3-theme" style="padding:64px 32px">
   <h1 class="w3-xxxlarge">Muambyte</h1>
 </header>
-<div  >
-<img src="C:/Users/arquimedes.junior/Desktop/Muambyte/WebContent/Imagens/download.png">
-</div>
+<table style="width:100%">
+ <tr>
+    <th>
+	<img src="C:/Users/arquimedes.junior/Desktop/Celular/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00
+	</th>
+    <th>
+	<img src="C:/Users/arquimedes.junior/Desktop/Celular/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00	
+	</th> 
+ </tr>
+    <br>
 
-<div  >
-<img src="C:/Users/arquimedes.junior/Desktop/Muambyte/WebContent/Imagens/download.png">
-</div>
+  <table style="width:100%">
+  <tr>
+    <th>
+	<img src="C:/Users/arquimedes.junior/Desktop/Celular/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00
+	</th>
+    <th>
+	<img src="C:/Users/arquimedes.junior/Desktop/Celular/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00	
+	</th> 
+   </tr>
+   
+   <br>
+      <br>
 
-<div  >
-<img src="C:/Users/arquimedes.junior/Desktop/Muambyte/WebContent/Imagens/download.png">
-</div>
-
-<div  >
-<img src="C:/Users/arquimedes.junior/Desktop/Muambyte/WebContent/Imagens/download.png">
-</div>
-
-<div  >
-<img src="C:/Users/arquimedes.junior/Desktop/Muambyte/WebContent/Imagens/download.png">
-</div>
-
+    <table style="width:100%">
+  <tr>
+    <th>
+	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00
+			
+	</th>
+    <th>
+	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00	
+	</th> 
+   </tr>
+      <br>
+	  
+	  <table style="width:100%">
+ <tr>
+    <th>
+	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00
+	</th>
+    <th>
+	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.png" width="150" height="150">
+	<br>Celular Sansug<br>
+			R$250,00	
+	</th> 
+ </tr>
+  <br>
 
 <footer class="w3-container w3-theme" style="padding:32px">
   <p>Para mais informações</p>
