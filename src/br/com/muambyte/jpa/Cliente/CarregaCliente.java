@@ -15,7 +15,7 @@ public class CarregaCliente {
 	    EntityManager manager = factory.createEntityManager();
 
 	    Cliente encontrada = manager.find(Cliente.class,1);
-	    System.out.println(encontrada.getIdCliente());    
+	    System.out.println(encontrada.getCpf());    
 
 	    manager.close();
 

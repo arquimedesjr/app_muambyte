@@ -4,7 +4,7 @@
 <html>
   <body>
     <h3>Adicionar tarefas</h3>
-    <form action="adicionaTarefa" method="post">
+    <form action="adicionaCliente" method="post">
       Descrição: <br />
       <textarea name="descricao" rows="5" cols="100"></textarea><br />
       

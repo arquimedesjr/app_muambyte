@@ -8,14 +8,14 @@ import javax.persistence.Id;
 public class Login {
 	@Id
 	@GeneratedValue
-	private int id_login;
+	private int idLogin;
 	private String usuario, senha, d_e_l_e_t_e;
 		
-	public int getId_login() {
-		return id_login;
+	public int getIdLogin() {
+		return idLogin;
 	}
-	public void setId_login(int id_login) {
-		this.id_login = id_login;
+	public void setIdLogin(int idLogin) {
+		this.idLogin = idLogin;
 	}
 	public String getUsuario() {
 		return usuario;

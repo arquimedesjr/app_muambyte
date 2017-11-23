@@ -11,7 +11,7 @@ public class AdicionaProduto {
 	public static void main(String[] args) {
 		Produto produto = new Produto();
 		produto.setNome("Sansung 123");
-		produto.setPrecoUnitario(10.0);
+		produto.setPrecoUnitario("10.0");
 		produto.setQuantidade("50");
 		produto.setD_e_l_e_t_e("0");
 			

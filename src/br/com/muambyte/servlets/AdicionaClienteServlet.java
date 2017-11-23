@@ -2,7 +2,6 @@ package br.com.muambyte.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -17,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.muambyte.modelo.Cliente;
+import br.com.muambyte.modelo.Login;
 
 @WebServlet("/adicionaCliente")
 public class AdicionaClienteServlet extends HttpServlet {
@@ -32,6 +32,9 @@ public class AdicionaClienteServlet extends HttpServlet {
 		String sexo = request.getParameter("sexo");
 		String dataEmTexto = request.getParameter("dataNascimento");
 		Calendar dataNascimento = null;
+		String usuario = request.getParameter("usuario");
+		String senha = request.getParameter("senha");
+		
 
 		// fazendo a conversão da data
 		try {
@@ -51,6 +54,12 @@ public class AdicionaClienteServlet extends HttpServlet {
 		cliente.setSexo(sexo);
 		cliente.setDataNascimento(dataNascimento);
 		cliente.setD_e_l_e_t_e("0");
+		
+		
+		Login login = new Login();
+		login.setUsuario(usuario);
+		login.setSenha(senha);
+		login.setD_e_l_e_t_e("0");
 
 		// salva o contato
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("muambyte");
@@ -58,11 +67,11 @@ public class AdicionaClienteServlet extends HttpServlet {
 
 		manager.getTransaction().begin();
 		manager.persist(cliente);
+		manager.persist(login);
 		manager.getTransaction().commit();
 
-		System.out.println("Gravado!\nNome: " + cliente.getNome() + "\nCPF: " + cliente.getCpf() + "\nRg: "
-				+ cliente.getRg() + "\nEmail: " + cliente.getEmail() + "\nEndereço: " + cliente.getEndereco()
-				+ "\nTelefone: " + cliente.getTelefone());
+		System.out.println("Gravado!");
+				
 
 		manager.close();
 

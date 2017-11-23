@@ -10,7 +10,7 @@ public class Produto {
 	@GeneratedValue
 	private int idProduto;
 	private String nome,quantidade,d_e_l_e_t_e;
-	private double precoUnitario;
+	private String precoUnitario;
 	
 	public String getD_e_l_e_t_e() {
 		return d_e_l_e_t_e;
@@ -30,10 +30,10 @@ public class Produto {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public double getPrecoUnitario() {
+	public String getPrecoUnitario() {
 		return precoUnitario;
 	}
-	public void setPrecoUnitario(double precoUnitario) {
+	public void setPrecoUnitario(String precoUnitario) {
 		this.precoUnitario = precoUnitario;
 	}
 	public String getQuantidade() {

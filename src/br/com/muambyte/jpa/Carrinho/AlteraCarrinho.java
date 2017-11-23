@@ -20,8 +20,8 @@ public class AlteraCarrinho {
 		carrinho.setFrete(5.0);
 		carrinho.setQtdPeca(2); 
 				
-		carrinho.setValorTotal(carrinho.getFrete()+carrinho.getQtdPeca()*encontrada.getPrecoUnitario());
-
+/*		carrinho.setValorTotal(carrinho.getFrete()+carrinho.getQtdPeca()*encontrada.getPrecoUnitario());
+*/
 		manager.getTransaction().begin();
 		manager.merge(carrinho);
 		manager.getTransaction().commit();

@@ -21,8 +21,7 @@ public class AdicionaLogin {
 		manager.persist(login);
 		manager.getTransaction().commit();
 
-		System.out.println("ID login: " + login.getId_login()+"\nUsuario: "+login.getUsuario()+"\nSenha: "+login.getSenha()
-				+"\nDelete: "+login.getD_e_l_e_t_e());
+		System.out.println("Gravado!");
 		
 
 		manager.close();
