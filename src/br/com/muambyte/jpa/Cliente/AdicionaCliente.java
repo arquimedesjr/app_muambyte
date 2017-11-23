@@ -14,6 +14,7 @@ public class AdicionaCliente {
 		cliente.setCpf("428.617.118-33");
 		cliente.setRg("987654321");
 		cliente.setEmail("email");
+		cliente.setSexo("Masculino");
 		cliente.setEndereco("Rua jose monteiro, 323 apto 425");
 		cliente.setTelefone("98765444");
 		cliente.setD_e_l_e_t_e("0");
