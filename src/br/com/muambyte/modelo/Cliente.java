@@ -1,5 +1,7 @@
 package br.com.muambyte.modelo;
 
+
+
 import java.util.Calendar;
 
 import javax.persistence.Entity;
@@ -13,26 +15,25 @@ public class Cliente {
 	@Id
 	@GeneratedValue
 	private int idCliente;
-	private String nome, /*cpf, rg,*/ telefone, email, endereco, /*sexo,*/ d_e_l_e_t_e;
-	/*@Temporal(TemporalType.DATE)
-	private Calendar dataNascimento;*/
+	private String nome, cpf, rg, telefone, email, endereco, sexo, d_e_l_e_t_e;
+	@Temporal(TemporalType.DATE)
+	private Calendar dataNascimento;
 
-	/*public String getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-*/
-	/*public Calendar getDataNascimento() {
+
+	public Calendar getDataNascimento() {
 		return dataNascimento;
 	}
 
 	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-*/
 	public String getEndereco() {
 		return endereco;
 	}
@@ -57,7 +58,7 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-/*	public String getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
@@ -72,7 +73,7 @@ public class Cliente {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-*/
+
 	public String getTelefone() {
 		return telefone;
 	}
