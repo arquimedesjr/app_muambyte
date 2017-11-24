@@ -17,6 +17,7 @@ public class TestaAltera {
 		 cliente.setCpf("123");
 		 cliente.setRg("123");
 		 cliente.setDataNascimento(Calendar.getInstance());
+		 cliente.setD_e_l_e_t_e("0");
 		 
 		 	 
 		 ClienteDao dao = new ClienteDao();

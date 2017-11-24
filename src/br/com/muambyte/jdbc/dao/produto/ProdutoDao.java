@@ -19,8 +19,7 @@ public class ProdutoDao {
 	}
 
 	public void adiciona(Produto produto) {
-		String sql = "insert into produto (nome, precoUnitario, quantidade, d_e_l_e_t_e)"
-				+ " values (?,?,?,?)";
+		String sql = "insert into produto (nome, precoUnitario, quantidade, d_e_l_e_t_e)" + " values (?,?,?,?)";
 
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
@@ -29,7 +28,7 @@ public class ProdutoDao {
 			stmt.setString(2, produto.getPrecoUnitario());
 			stmt.setString(3, produto.getQuantidade());
 			stmt.setString(4, produto.getD_e_l_e_t_e());
-			
+
 			stmt.execute();
 			stmt.close();
 		} catch (SQLException e) {
@@ -39,7 +38,8 @@ public class ProdutoDao {
 	}
 
 	public void altera(Produto produto) {
-		String sql = "update produto set nome=?, precoUnitario=?, quantidade=? where idProduto=?";
+		String sql = "update produto set nome=?, precoUnitario=?, quantidade=?, d_e_l_e_t_e=? "
+				+ "where idProduto=?";
 
 		try {
 			PreparedStatement stmt = connection.prepareStatement(sql);
@@ -48,6 +48,7 @@ public class ProdutoDao {
 			stmt.setString(2, produto.getPrecoUnitario());
 			stmt.setString(3, produto.getQuantidade());
 			stmt.setInt(4, produto.getIdProduto());
+			stmt.setString(5, produto.getD_e_l_e_t_e());
 
 			stmt.execute();
 			stmt.close();
@@ -81,10 +82,10 @@ public class ProdutoDao {
 
 			while (rs.next()) {
 				Produto produto = new Produto();
-				System.out.println("idProduto: "+produto.getIdProduto());
-				System.out.println("Nome: "+produto.getNome());
-				System.out.println("Preço Unitario: "+produto.getPrecoUnitario());
-				System.out.println("Quantidade: "+produto.getQuantidade());
+				produto.setIdProduto(rs.getInt("idProduto"));
+				produto.setNome(rs.getString("nome"));
+				produto.setPrecoUnitario(rs.getString("precoUnitario"));
+				produto.setQuantidade(rs.getString("quantidade"));
 
 				produtos.add(produto);
 			}

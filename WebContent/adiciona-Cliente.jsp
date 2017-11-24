@@ -53,15 +53,6 @@
 					(inserir o endereço completo, logadouro, numero e cep)</label>
 			</p>
 			<p>
-				<input name="usuario" class="w3-input" type="text"
-					style="width: 90%" required> <label>Usuario:</label>
-			</p>
-			<p>
-				<input name="senha" class="w3-input" type="text" style="width: 90%"
-					required> <label>senha:</label>
-			</p>
-
-			<p>
 				<input class="w3-radio" type="radio" name="sexo" value="female">
 				<label>Feminino</label>
 			</p>

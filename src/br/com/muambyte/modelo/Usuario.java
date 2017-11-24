@@ -5,17 +5,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Login {
+public class Usuario {
 	@Id
 	@GeneratedValue
-	private int idLogin;
+	private int idUsuario;
 	private String usuario, senha, d_e_l_e_t_e;
 		
-	public int getIdLogin() {
-		return idLogin;
+	public int getIdUsuario() {
+		return idUsuario;
 	}
-	public void setIdLogin(int idLogin) {
-		this.idLogin = idLogin;
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
 	}
 	public String getUsuario() {
 		return usuario;

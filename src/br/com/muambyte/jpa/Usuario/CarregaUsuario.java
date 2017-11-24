@@ -1,12 +1,12 @@
-package br.com.muambyte.jpa.login;
+package br.com.muambyte.jpa.Usuario;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import br.com.muambyte.modelo.Login;
+import br.com.muambyte.modelo.Usuario;
 
-public class CarregaLogin {
+public class CarregaUsuario {
 	public static void main(String[] args) {
 		
 	
@@ -14,7 +14,7 @@ public class CarregaLogin {
 	        createEntityManagerFactory("muambyte");
 	    EntityManager manager = factory.createEntityManager();
 
-	    Login encontrada = manager.find(Login.class,1);
+	    Usuario encontrada = manager.find(Usuario.class,1);
 	    System.out.println(encontrada.getUsuario());    
 
 	    manager.close();

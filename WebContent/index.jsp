@@ -19,13 +19,14 @@ body {font-family: "Roboto", sans-serif}
 </head>
 <body>
 
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
-  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
   <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Fechar <i class="fa fa-remove"></i></a>
-  <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/adiciona-Cliente.jsp">Cadastra Cliente</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/login.jsp">Acessar</a>
-  <a class="w3-bar-item w3-button" href="http://localhost:8080/LojaMuambyte/adiciona-Produto.jsp">Cadatro Produto</a>
+  <a class="w3-bar-item w3-button" href="#">Home</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/adiciona-Cliente.jsp">Cadastra Cliente</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/login.jsp">Acessar</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/adiciona-Produto.jsp">Cadatro Produto</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/adiciona-usuario.jsp">Cadatro Usuario</a>
+  <a class="w3-bar-item w3-button" href="http://localhost:8081/LojaMuambyte/lista-cliente.jsp">Relatorio de Cliente</a>
   <!-- <a class="w3-bar-item w3-button" href="#"></a>
   <!-- <a class="w3-bar-item w3-button" href="#"></a> -->
   <div>

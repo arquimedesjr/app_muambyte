@@ -10,7 +10,7 @@ public class TestaRemove {
 		Produto produto = new Produto();
 		
 		produto.setD_e_l_e_t_e("1");
-		produto.setIdProduto(1);
+		produto.setIdProduto(5);
 		
 		ProdutoDao dao = new ProdutoDao();
 		dao.remove(produto);

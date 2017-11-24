@@ -15,7 +15,7 @@ public class TestaLista {
 			System.out.println("IdProduto: " + produto.getIdProduto());
 			System.out.println("Nome: " + produto.getNome());
 			System.out.println("Preço Unitario: " + produto.getPrecoUnitario());
-			System.out.println("Quantidade: " + produto.getQuantidade());
+			System.out.println("Quantidade: " + produto.getQuantidade()+"\n");
 		}
 	}
 }

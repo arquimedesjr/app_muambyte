@@ -8,15 +8,16 @@ public class TestaAltera {
 		
 		Produto produto = new Produto();
 		
-		produto.setIdProduto(1);
+		produto.setIdProduto(2);
 		produto.setNome("Tim");
 		produto.setPrecoUnitario("1,10");
 		produto.setQuantidade("10");
+		produto.setQuantidade("0");
 		
 		ProdutoDao dao = new ProdutoDao();
-		dao.remove(produto);
+		dao.altera(produto);
 		
-		System.out.println("Removido!");
+		System.out.println("Alterado!");
 	}
 
 }
