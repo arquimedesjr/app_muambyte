@@ -53,12 +53,12 @@
 					(inserir o endereço completo, logadouro, numero e cep)</label>
 			</p>
 			<p>
-				<input class="w3-radio" type="radio" name="sexo" value="female">
+				<input class="w3-radio" type="radio" name="sexo" value="Feminino">
 				<label>Feminino</label>
 			</p>
 
 			<p>
-				<input class="w3-radio" type="radio" name="sexo" value="female">
+				<input class="w3-radio" type="radio" name="sexo" value="Masculino">
 				<label>Masculino</label>
 			</p>
 

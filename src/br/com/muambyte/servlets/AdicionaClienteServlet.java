@@ -21,11 +21,14 @@ public class AdicionaClienteServlet extends HttpServlet {
 			throws IOException, ServletException {
 
 		PrintWriter out = response.getWriter();
-
+		
 		String nome = request.getParameter("nome");
-		String endereco = request.getParameter("endereco");
+		String cpf = request.getParameter("cpf");
+		String rg = request.getParameter("rg");
 		String email = request.getParameter("email");
+		String telefone = request.getParameter("telefone");
 		String sexo = request.getParameter("sexo");
+		String endereco = request.getParameter("endereco");
 		String dataEmTexto = request.getParameter("dataNascimento");
 		Calendar dataNascimento = null;
 		String d_e_l_e_t_e = request.getParameter("d_e_l_e_t_e");
@@ -44,6 +47,9 @@ public class AdicionaClienteServlet extends HttpServlet {
 		cliente.setEmail(email);
 		cliente.setSexo(sexo);
 		cliente.setDataNascimento(dataNascimento);
+		cliente.setCpf(cpf);
+		cliente.setRg(rg);
+		cliente.setTelefone(telefone);
 		cliente.setD_e_l_e_t_e("0");
 
 		ClienteDao clienteDao = new ClienteDao();

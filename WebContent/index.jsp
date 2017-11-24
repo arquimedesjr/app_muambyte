@@ -86,7 +86,7 @@ body {font-family: "Roboto", sans-serif}
     <table style="width:100%">
   <tr>
     <th>
-	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.png" width="150" height="150">
+	<img src="C:/Users/User/Desktop/Muambyte/WebContent/Imagens/download.jpg" width="150" height="150">
 	<br>Celular Sansug<br>
 			R$250,00
 			
