@@ -7,8 +7,8 @@ public class GerarTabela {
 
 	public static void main(String[] args) {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("muambyte");
-
 		factory.close();
+		System.out.println("Tabelas Criadas!");
 	}
 
 }
